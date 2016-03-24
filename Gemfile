@@ -45,3 +45,13 @@ group :development do
   gem 'spring'
 end
 
+# better error tools
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+# rspec for TDD
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end

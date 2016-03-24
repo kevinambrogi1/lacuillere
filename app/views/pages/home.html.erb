@@ -1,0 +1,32 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<p> <% name = "Tomasz" %> </p>
+<p> <%= name.upcase %></p>
+<p> Today we are <%= Time.now.strftime("%d/%m/%Y")%> </p>
+
+<h2>Names List:</h2>
+<p> <% names = ['John','Amy','Kevin','Sarah'] %></p>
+
+<ol>
+  <% names.each do |name| %>
+  <li> <%= name %> </li>
+  <% end %>
+</ol>
+
+<h2>Names List 2:</h2>
+<p> <% names = ['John','Amy','Kevin','Sarah'] %></p>
+
+<p>
+  <% names.each do |name| %>
+  <p> <%= name %> </p>
+  <% end %>
+</p>
+
+<hr>
+
+<form action="/" method="get">
+  <input type="text" name="search_term" placeholder="search">
+  <input type="submit">
+</form>
+<p> <%= params.inspect %> </p>
